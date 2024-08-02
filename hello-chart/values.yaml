@@ -1,0 +1,10 @@
+replicaCount: 1
+
+ingress:
+  hosts: hello-app.example.com
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 5
